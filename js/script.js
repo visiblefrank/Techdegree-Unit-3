@@ -209,7 +209,6 @@ function checkAllCc(){
     if (paymentSelect.value == 'credit-card'){
         checkAllCc();
     }
-
 });
 
 
