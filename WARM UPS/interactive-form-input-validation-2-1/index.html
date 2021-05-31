@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Form Input Validation</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body id="top">
+
+    <header>
+      <div class="header-heading">
+        <div>
+          <a href="https://teamtreehouse.com/home" target="_blank"><img src="img/frogprint.png" alt="Treehouse logo" class="logo"></a>
+          <h1>Form Input Validation</h1>
+        </div>
+        <div class="info">
+          <p>FSJS Techdegree</p>
+          <p>Project Warm Up</p>
+        </div>
+      </div>
+    </header>
+
+    <form action="#top" method="post" id="form" class="form" autocomplete="off" novalidate>
+      <fieldset id="contact-info" class="contact-info">
+        <legend>Contact Info</legend>
+        <label for="name">Name:
+          <input type="text" name="name" id="name">
+        </label>
+  
+        <label for="email">Email Address:
+          <input type="email" id="email" name="email">
+        </label>
+      </fieldset>
+
+      <fieldset id="languages" class="languages">
+        <legend>Languages</legend>
+        <div id="checkbox-wrapper" class="checkbox-wrapper">
+          <label for="javascript">
+            <input type="checkbox" id="javascript" name="language" value="JavaScript"> JavaScript
+          </label>
+          <label for="python">
+            <input type="checkbox" id="python" name="language" value="Python"> Python
+          </label>
+          <label for="php">
+            <input type="checkbox" id="php" name="language" value="PHP"> PHP
+          </label>
+          <label for="ruby">
+            <input type="checkbox" id="ruby" name="language" value="Ruby"> Ruby
+          </label>
+          <label for="java">
+            <input type="checkbox" id="java" name="language" value="Java"> Java
+          </label>
+          <label for="go">
+            <input type="checkbox" id="go" name="language" value="go"> Go
+          </label>
+          <label for="csharp">
+            <input type="checkbox" id="csharp" name="language" value="C#"> C#
+          </label>
+          <label for="c-plus">
+            <input type="checkbox" id="c-plus" name="language" value="C++"> C++
+          </label>
+        </div>
+        <p id="language-total" class="language-total">Total: 0</p>
+      </fieldset>
+
+      <div class="submit-help-box">
+        <input type="submit" id="submit" class="submit" value="Submit">
+        <div class="help-container">
+          <p>If you get stuck or have questions, be sure to reach out in <a href="https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat" target="_blank">Slack <img src="img/fsjs.png" alt="FSJS Slack logo"></a></p>
+        </div>
+      </div>
+      
+    </form>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
